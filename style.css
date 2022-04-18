@@ -66,7 +66,7 @@ html{
   height: 10vh;
 z-index: 4;
   margin-bottom: 20px;
-  background:var(--background);
+  
   color: var(--foreground);
  
   
@@ -85,12 +85,19 @@ z-index: 4;
   font-weight: 550;
   color: var(--foreground);
 }
-
-
-
-.menu-container a {
+.menu-container a{
   text-decoration: none;
   color: var(--background);
+}
+.menu-logo a {
+  text-decoration: none;
+  color: var(--foreground);
+}
+
+
+.menu-container  {
+  text-decoration: none;
+  color: var(--foreground);
   transition: color 0.3s ease;
 }
 
@@ -116,6 +123,7 @@ z-index: 4;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
+  
   position: relative;
   background: var(--foreground);
   border-radius: 3px;
@@ -166,20 +174,21 @@ z-index: 4;
   .menu-container {
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 2rem;
+    margin-left: 19rem;
   }
 
   .menu-logo {
     position: absolute;
-    left: 0;
-    top: 50%;
-    
+   
+    margin-right:25rem;
+    transform: scale(1.3);
+    margin-top: 0.5rem;
+   color: var(--foreground);
+   
   }
 
-  .menu-logo img {
-    max-height: 100%;
-    
-    z-index: 1;
-  }
+  
 
   .menu {
     position: absolute;
@@ -749,4 +758,174 @@ fieldset {
   background-color: var(--fourth-light);
   padding-top: 10rem;
 padding-bottom: 10rem;
+}
+
+
+.resume a:link,
+.resume a:visited {
+  text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    background-color: var(--foreground);
+    color:var(--background);
+    border-radius: .5rem;
+    
+    transition: all 300ms ease-in-out;
+}
+
+.resume a:hover {
+    transform: translateY(-3px);
+    background-color: var(--primary);
+    color: var(--foreground);
+    
+}
+
+.resume a:active {
+    transform: translateY(0)
+}
+
+.bitblob2{
+  display: none;
+}
+
+.hero{
+  display: none;
+}
+.mob-par{
+  display: none;
+}
+
+
+#flip {
+  height: 50px;
+  overflow: hidden;
+}
+
+#flip>div>div {
+  color: var(--foreground);
+  padding: 1px 1px;
+  height: 45px;
+  margin-bottom: 55px;
+  display: inline-block;
+}
+
+#flip div:first-child {
+  animation: show 6s linear infinite;
+}
+
+#flip div div {
+  background: var(--background);
+}
+
+#flip div:first-child div {
+  background: var(--background);
+}
+
+#flip div:last-child div {
+  background:var(--background);
+}
+
+@keyframes show {
+  0% {
+      margin-top: -270px;
+  }
+  5% {
+      margin-top: -180px;
+  }
+  33% {
+      margin-top: -180px;
+  }
+  38% {
+      margin-top: -90px;
+  }
+  66% {
+      margin-top: -90px;
+  }
+  71% {
+      margin-top: 0px;
+  }
+  99.99% {
+      margin-top: 0px;
+  }
+  100% {
+      margin-top: -270px;
+  }
+}
+
+
+
+/*responsiveness*/
+
+@media only screen and (max-width: 768px) {
+  .writing{
+   margin-left: -17rem;
+    margin-top: -12rem;
+
+  }
+  
+.bitblob{
+display: none;
+}
+.bitblob2{
+  display: block;
+}
+.resume {
+  display: none;
+}
+.slider-text-container{
+ display: none;
+}
+
+
+.under h2,p{
+  display: none;
+}
+.hero{
+  display: block;
+  margin-left: -4rem;
+}
+.flip h4{
+  color: var(--primary);
+}
+.hero h3{
+  font-size: 16px;
+}
+.hero span{
+  color: var(--primary);
+}
+
+
+
+.hero a:link,
+.hero a:visited {
+  text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    background-color: var(--foreground);
+    color:var(--background);
+    border-radius: .5rem;
+    
+    transition: all 300ms ease-in-out;
+}
+
+.hero a:hover {
+    transform: translateY(-3px);
+    background-color: var(--primary);
+    color: var(--foreground);
+    
+}
+
+.hero a:active {
+    transform: translateY(0)
+}
+.dark-mode-toggle{
+  margin-top: -34rem;
+  padding-right: 45px;
+  background-color: var(--background);
+}
+.bitblob2{
+  padding-right: 20rem;
+}
 }

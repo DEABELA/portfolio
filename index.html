@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;800&display=swap" rel="stylesheet">
-   
+
+
 </head>
 <body>
     <div class="navigation">
@@ -21,10 +22,11 @@
         <span></span>
       
         <!-- logo -->
+        <div class="menu-logo">
         <a href="#" class="menu-logo">
           DE'ABELA
         </a>
-      
+      </div>
         <!-- menu items -->
         <div class="menu">
           <ul>
@@ -109,9 +111,38 @@
              
             </ul>
           </div>
+          <div class="hero">
+
+            <h3>Hello, my name is <span> Abel </span>Daniel</h3>
+            <br>
+            <h4>And I'm a</h4>
+                <div class="flip" id=flip>
+                    <div>
+                        <div><h4>ux/ui designer</h4></div>
+                    </div>
+                    <div>
+                        <div><h4>a frontend developer</h4></div>
+                    </div>
+                    <div>
+                      <div><h4>a website developer</h4></div>
+                  </div>
+                  
+                </div>
+            <h3>Based in Addis Ababa, Ethiopia</h3><br>
+            <a href="./resume.pdf">Downlaod Cv</a>
+        </div>
           
         <h2>Based in Addis Ababa, Ethiopia</h2><br>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Saepe nobis quasi aliquid hic eos officia eveniet vel odit! <br>Labore perspiciatis sint mollitia totam sit officia magni,<br> aspernatur eaque et reiciendis!</p>
+        <div class="mob-par">
+          <p>A web designer based in the lovely city of Addis Ababa,Ethiopia</p>
+        </div>
+        <div class="resume">
+          <a href="./resume.pdf">Downlaod Cv</a>
+        </div>
+      </div>
+      <div class="bitblob2">
+        <img src="bitblob2.jpg" alt="">
       </div>
         <div class="bitblob">
           <img src="img.png"  alt="">
@@ -122,7 +153,7 @@
 <div class="scroller">
       <a class="scroller" href="#whatIdo"><b>Scroll for more</b><hr> </a>
     </div>
-
+    
     </div>
     
 
@@ -384,28 +415,33 @@
   
    <div class="contactme" id="contactme">
     <div class="container">  
-      <form id="contact" action="" method="post">
-        <h3>Get in touch</h3>
-        <h4>Contact me for custom quote</h4>
-        <fieldset>
-          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Your Email Address" type="email" tabindex="2" required>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-        </fieldset>
-            <fieldset>
-          <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-        </fieldset>
-        <fieldset>
-          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-        </fieldset>
-        </form>
-    </div>
-   </div>
+      <div class="contact">
+        <p class="contact-name"><strong>Phone-no</strong></p>
+        <p class="contact-phone"><a>+251986549050</a></p>
+        <div class="btn-group">
 
+            <button type="button" class="btn btn-default btn-copy js-tooltip js-copy" data-toggle="tooltip" data-placement="bottom" data-copy="+251986549050" title="Copy to clipboard">
+            <!-- icon from google's material design library -->
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M17,9H7V7H17M17,13H7V11H17M14,17H7V15H14M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z" /></svg>
+          </button>
+        </div>
+    </div>
+    <div class="contact">
+        <p class="contact-name"><strong>Email</strong></p>
+        <p class="contact-phone"><a>abdan8787@gmail.com </a></p>
+        <div class="btn-group">
+
+            <button type="button" class="btn btn-default btn-copy js-tooltip js-copy" data-toggle="tooltip" data-placement="bottom" data-copy="+251986549050" title="Copy to clipboard">
+            <!-- icon from google's material design library -->
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M17,9H7V7H17M17,13H7V11H17M14,17H7V15H14M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z" /></svg>
+          </button>
+        </div>
+
+
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
    <script src="script.js"></script>
+  <script src="phone.js"></script>
 </body>
 </html>
